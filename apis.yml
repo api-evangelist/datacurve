@@ -1,8 +1,29 @@
 aid: datacurve
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datacurve.png
 name: Datacurve
-description: 'Datacurve is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Datacurve is a San Francisco-based AI infrastructure company that positions
+  itself as "the data engine for frontier AI," building high-quality,
+  expert-annotated datasets, reinforcement-learning environments, long-horizon
+  agent tasks, benchmarks, and supervised fine-tuning demonstrations used to
+  train and evaluate frontier AI models. Its offerings include off-the-shelf and
+  custom datasets, agent-trajectory capture (tool calls, pivots, recovery
+  attempts), and domain-sensitive evaluations across software engineering, data
+  science, cybersecurity, machine learning, and research. Datacurve is backed by
+  Homebrew and publishes research such as the DeepSWE long-horizon coding
+  benchmark. The company sells through direct engagement (contact@datacurve.ai)
+  and currently exposes no public API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/datacurve/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +31,27 @@ x-backed-by:
 - homebrew
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  last_run: '2026-07-18'
+  status: no-public-api-surface
+  notes: >-
+    Enrichment probed the site plus the well-known and package-registry surface.
+    Datacurve has no public API, developer portal, docs, SDKs/packages, or event
+    surface, so most artifact types are N/A (not penalized). Only the
+    domain-security probe and an identity/discoverability pass yielded real data.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai
+- Machine Learning
+- Datasets
+- Reinforcement Learning
+- Benchmarks
+- LLM Training
+- AI Infrastructure
+- Data Annotation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +61,11 @@ maintainers:
 common:
 - type: Website
   url: https://datacurve.ai
+- type: Products
+  url: https://datacurve.ai/products
+- type: Research
+  url: https://datacurve.ai/research
+- type: Careers
+  url: https://datacurve.ai/careers
+- type: DomainSecurity
+  url: security/datacurve-domain-security.yml
