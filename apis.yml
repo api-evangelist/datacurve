@@ -56,7 +56,7 @@ modified: '2026-07-18'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Datasets
 - Reinforcement Learning
 - Benchmarks
@@ -73,6 +73,7 @@ tags_raw:
 - LLM Training
 - AI Infrastructure
 - Data Annotation
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
